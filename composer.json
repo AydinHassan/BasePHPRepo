@@ -1,0 +1,28 @@
+{
+    "name": "vendor/lib",
+    "description": "Description",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aydin Hassan",
+            "email": "aydin@hotmail.co.uk"
+        }
+    ],
+    "require" : {
+        "php" : ">=5.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.1",
+        "squizlabs/php_codesniffer": "1.4.*",
+        "satooshi/php-coveralls": "~0.6"
+    },
+    "autoload" : {
+        "psr-4" : {
+            "Vendor\\Lib\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { "Vendor\\LibTest\\": "test/" }
+    }
+}
